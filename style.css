@@ -3,9 +3,6 @@
   --black: black;
   --white: white;
   --olive: #3f6634;
-  /*----- values -----*/
-
-  /*----- display -----*/
 }
 
 * {
@@ -115,13 +112,39 @@ header {
   color: var(--black);
 }
 
+#about #presentation {
+  border: 1px var(--white) solid;
+  -webkit-box-shadow: 0px 0px 15px -7px var(--black);
+  box-shadow: 0px 0px 15px -7px var(--black);
+}
+
+#tech {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#tech img {
+  width: 5%;
+  height: auto;
+  padding: 1rem;
+}
+
+#tech img:hover {
+  -webkit-box-shadow: 0px 0px 15px -7px var(--black);
+  box-shadow: 0px 0px 15px -7px var(--black);
+}
 /*---------- Projects ----------*/
 
-.card h3,
-.card p {
+#projects .card h3,
+#projects .card p {
   color: var(--black);
 }
 
-.card p {
+#projects .card p {
   font-size: 0.8rem;
+}
+
+#projects .card:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px var(--white);
+  box-shadow: 0px 0px 10px 1px var(--white);
 }
