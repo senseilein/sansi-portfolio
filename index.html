@@ -53,7 +53,7 @@
       </nav>
     </header>
     <main>
-      <section class="d-flex justify-content-center" id="home">
+      <section class="d-flex justify-content-center mt-3" id="home">
         <div class="card col-lg-4" id="avatar-card">
           <img
             src="./assets/images/avatar_people_woman_black_girl_face_icon_178883_by_Filipe_Adson.png"
@@ -61,12 +61,12 @@
             alt="avatar coder lady"
           />
           <div class="card-body d-flex flex-column justify-content-center">
-            <h5 class="card-title text-center white-text" id="main-name">
+            <h1 class="card-title text-center white-text p-3" id="main-name">
               SANSI BINDIKA
-            </h5>
-            <p class="card-text white-text text-center" id="front-end">
+            </h1>
+            <h2 class="card-text white-text text-center py-2" id="front-end">
               Front-End Web Developer
-            </p>
+            </h2>
             <a href="#about" class="down-arrow d-flex justify-content-center"
               ><img
                 src="./assets/icons/down_icon-icons.com_61209_by_Anastasya_Bolshakova.png"
@@ -75,12 +75,13 @@
         </div>
       </section>
       <section
-        class="d-flex justify-content-center align-items-center"
+        class="my-5 d-flex justify-content-center align-items-center"
         id="about"
       >
-        <div class="col-lg-6 about-wrap">
+        <div id="about-wrap">
+          <h2 class="text-center mt-5">A few words about me</h2>
           <p
-            class="mx-auto text-justify justify-items-center"
+            class="col-lg-6 mx-auto text-justify justify-items-center my-5"
             id="presentation"
           >
             When it comes to my professional career, my main fields of interest
@@ -99,54 +100,81 @@
         </div>
       </section>
       <section
-        class="d-flex justify-content-center align-items-center my-5"
+        class="col-lg-12 d-flex flex-column justify-content-center align-items-center my-5 text-white"
         id="projects"
       >
-        <div class="col-lg-12 d-flex projects-wrap">
-          <div id="main-project">
-            <div class="card mx-3 my-3">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+        <h2 class="text-center pb-5">Discover my Work</h2>
+        <div class="col-lg-12 d-flex justify-content-center projects-wrap">
+          <a
+            href="https://clipchamp.com/watch/7lUXfFaNwCB"
+            target="_blank"
+            class="col-3 mt-2"
+          >
+            <div class="card mx-3">
+              <img
+                src="./assets/images/readme-file-generator-demo.png"
+                class="card-img-top"
+                alt="Readme File Generator"
+              />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h3 class="card-title text-center p-1">
+                  README File Generator
+                </h3>
+                <p class="card-text text-center p-3">
+                  A command-line application that generates a professional
+                  README file based on user input.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-          </div>
-          <div id="other-projects">
+          </a>
+          <a
+            href="https://bytebazaar.netlify.app/"
+            target="_blank"
+            class="col-4"
+          >
             <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+              <img
+                src="./assets/images/ByteBazaar.png"
+                class="card-img-top mb-3"
+                alt="React e-commerce called ByteBazaar"
+              />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h3 class="card-title text-center p-1">React e-Commerce</h3>
+                <p class="card-text text-center px-3 pb-3">
+                  A React-based e-commerce website that includes features such
+                  as user login and a contact form powered by Web3forms.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card mx-3 my-3">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+          </a>
+
+          <a
+            href="https://senseilein.github.io/weather-dashboard/"
+            target="_blank"
+            class="col-3"
+          >
+            <div class="card mx-3">
+              <img
+                src="./assets/images/Weather Dashboard.png"
+                class="card-img-top mb-3"
+                alt="Weather dashboard website"
+              />
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h3 class="card-title text-center p-1">Weather Dashboard</h3>
+                <p class="card-text text-center p-3">
+                  A web application that provides weather forecast up to 6 days
+                  based on user input, using OpenWeather API.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
       <section
-        class="d-flex justify-content-center align-items-center my-5 text-white"
+        class="d-flex justify-content-center align-items-center my-5"
         id="contact"
       >
-        Contact form
+        contact form goes here
       </section>
     </main>
     <footer

@@ -30,6 +30,10 @@ a:hover {
 }
 
 /*---------- Common ----------*/
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
 
 .white-text {
   color: var(--white);
@@ -43,7 +47,12 @@ a:hover {
 /*---------- Header ----------*/
 
 header {
-  height: 9vh;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--black);
 }
 
 .navbar-brand {
@@ -57,7 +66,7 @@ header {
 /*---------- Home ----------*/
 
 #home {
-  height: 91vh;
+  height: 100vh;
 }
 
 #avatar-card {
@@ -80,23 +89,23 @@ header {
 }
 
 .down-arrow img {
-  width: 40%;
+  width: 30%;
   height: auto;
   margin: auto;
 }
 
 /*---------- About Me ----------*/
 #about {
-  height: 70vh;
+  min-width: 100%;
+  height: 91vh;
   background-image: url(./assets/images/background.png);
+  background-size: auto 100%;
 }
-#about .about-wrap {
+#about #about-wrap {
   background-color: rgba(255, 255, 255, 0.8);
   color: var(--black);
-  width: fit-content;
-  height: fit-content;
-  margin: 2rem 2rem;
-  padding: 4rem 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 #about #presentation span {
@@ -104,4 +113,15 @@ header {
   font-weight: 600;
   font-size: 1.5rem;
   color: var(--black);
+}
+
+/*---------- Projects ----------*/
+
+.card h3,
+.card p {
+  color: var(--black);
+}
+
+.card p {
+  font-size: 0.8rem;
 }
