@@ -1,9 +1,107 @@
+:root {
+  /*----- colours -----*/
+  --black: black;
+  --white: white;
+  --olive: #3f6634;
+  /*----- values -----*/
+
+  /*----- display -----*/
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: aqua;
+  background-color: var(--black);
+}
+
+/*---------- Reset ----------*/
+a,
+a:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.card-body {
+  padding: 0;
+}
+
+/*---------- Common ----------*/
+
+.white-text {
+  color: var(--white);
+}
+
+#about,
+#projects,
+#contact {
+  scroll-margin-top: 10vh; /* set to header height (or a bit more) to avoid top of section to be cut off when accessing the section from nav menu*/
+}
+/*---------- Header ----------*/
+
+header {
+  height: 9vh;
+}
+
+.navbar-brand {
+  font-family: "Zeyada", cursive;
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+/*---------- Home ----------*/
+
+#home {
+  height: 91vh;
+}
+
+#avatar-card {
+  background-color: var(--black);
+}
+
+#main-name {
+  font-size: 3.3rem;
+}
+
+#front-end {
+  font-size: 2.4rem;
+  background-color: var(--olive);
+  background-position: center;
+}
+
+.down-arrow {
+  width: 20%;
+  margin: auto;
+}
+
+.down-arrow img {
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+
+/*---------- About Me ----------*/
+#about {
+  height: 70vh;
+  background-image: url(./assets/images/background.png);
+}
+#about .about-wrap {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--black);
+  width: fit-content;
+  height: fit-content;
+  margin: 2rem 2rem;
+  padding: 4rem 2rem;
+}
+
+#about #presentation span {
+  /*key words in presentation paragraph*/
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--black);
 }
