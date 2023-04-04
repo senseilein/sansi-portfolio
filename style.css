@@ -166,6 +166,22 @@ header {
 /*---------- Media Queries ----------*/
 
 @media screen and (max-width: 992px) {
+  .navbar,
+  .navbar-expand-lg,
+  .navbar-dark {
+    background-color: var(--black);
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 0.5rem;
+  }
+
+  header a:hover,
+  .navbar-nav .nav-link:hover {
+    -webkit-box-shadow: 0px 0px 9x 1px var(--white);
+    box-shadow: 0px 0px 9px 1px var(--white);
+  }
+
   .projects-wrap {
     flex-direction: column;
   }
