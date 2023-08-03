@@ -5,6 +5,10 @@
   --olive: #3f6634;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
